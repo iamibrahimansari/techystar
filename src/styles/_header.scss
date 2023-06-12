@@ -1,0 +1,28 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: $first;
+    padding: 1rem 2rem;
+    .site-name{
+        text-transform: uppercase;
+        *{
+            color: #000;
+        }
+    }
+    &__nav{
+        *{
+            color: $dark;
+            transition: color 0.3s linear;
+            &:hover{
+                color: $third;
+            }
+        }
+        *:not(:last-child){
+            margin-right: 2rem;
+        }
+    }
+}
